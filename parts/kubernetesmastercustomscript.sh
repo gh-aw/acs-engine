@@ -440,6 +440,7 @@ if $REBOOTREQUIRED; then
     # wait 1 minute to restart master
     echo 'reboot required, rebooting master in 1 minute'
     /bin/bash -c "shutdown -r 1 &"
+    sleep 120
   else
     echo 'reboot required, rebooting agent in 1 minute'
     shutdown -r now
